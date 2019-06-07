@@ -1,0 +1,52 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>WPS de Venda</h1>
+        <form target="paypal" action="https://www.stage2p1869.qa.paypal.com/cgi-bin/webscr" id="paypal_form" method="post">
+            <div style="margin:0;padding:0;display:inline">
+                <input name="utf8" type="hidden" value="&#x2713;" />
+                <input name="authenticity_token" type="hidden" value="WYpfDaF7jFSds2AhDjQ6NcoJ8ox9KwfqQI3SCz7vU1E=" /></div>    
+            <input id="cmd" name="cmd" type="hidden" value="_cart" />
+            <input id="business" name="business" type="hidden" value="ppcontatestekauplus@gmail.com" />
+            <input id="paymentaction" name="paymentaction" type="hidden" value="sale" />
+
+            <input id="item_name_1" name="item_name_1" type="hidden" value="Barra de cholotade amargo" />
+            <input id="item_number_1" name="item_number_1" type="hidden" value="49069" />
+            <input id="amount_1" name="amount_1" type="hidden" value="10.0" />
+            <input id="quantity_1" name="quantity_1" type="hidden" value="1" />
+            <input id="shipping_1" name="shipping_1" type="hidden" value="1" />
+
+            <input id="first_name" name="first_name" type="hidden" value="Jefferson Prestes" />
+
+            <input id="address1" name="address1" type="hidden" value="Rua Carlos da Cunha Mattos, 471" />
+            <input id="address2" name="address2" type="hidden" value="Chácara Inglesa" />
+            <input id="city" name="city" type="hidden" value="São Paulo" />
+            <input id="state" name="state" type="hidden" value="SP" />
+            <input id="country" name="country" type="hidden" value="BR" />
+            <input id="zip" name="zip" type="hidden" value="05140040" />
+
+            <input type="hidden" value='http://java-ppbrasil.rhcloud.com/FreteServlet' name="callback_url" id="callback_url"/>
+            <input type="hidden" value='6' name="callback_timeout" id="callback_timeout"  />
+            <input type="hidden" value='61.0' name="callback_version" id="callback_version"  />
+            <input type="hidden" value='Entrega-Padrão' name="fallback_shipping_option_name_0" id="fallback_shipping_option_name_0"  />
+            <input type="hidden" value='6.70' name="fallback_shipping_option_amount_0" id="fallback_shipping_option_amount_0"  />
+            <input type="hidden" value='1' name="fallback_shipping_option_is_default_0" id="fallback_shipping_option_is_default_0"  />
+            <input type="hidden" value='0' name="fallback_insurance_option_offered" id="fallback_insurance_option_offered"  />
+
+            <input id="currency_code" name="currency_code" type="hidden" value="BRL" />
+
+            <!--<input id="country.x" name="country.x" type="hidden" value="br" />-->
+            <input id="lc" name="lc" type="hidden" value="BR" />
+            <div><input type="submit" value="Pagar" /></div>
+        </form>  
+        <hr />
+    </body>
+</html>
